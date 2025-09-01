@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shiftly.controller.LoginController">
+   <center>
+      <VBox alignment="CENTER" styleClass="login-container">
+         <children>
+            <VBox alignment="CENTER" styleClass="login-card">
+               <children>
+                  <!-- Logo e Título -->
+                  <VBox alignment="CENTER" spacing="10">
+                     <children>
+                        <Label styleClass="login-logo" text="Shiftly" />
+                        <Label styleClass="login-subtitle" text="Sistema de Controle de Ponto Eletrônico" />
+                     </children>
+                  </VBox>
+                  
+                  <!-- Formulário de Login -->
+                  <VBox spacing="20" styleClass="form-group">
+                     <children>
+                        <!-- Campo Email -->
+                        <VBox spacing="5">
+                           <children>
+                              <Label styleClass="form-label" text="Email" />
+                              <TextField fx:id="emailField" promptText="Digite seu email" />
+                           </children>
+                        </VBox>
+                        
+                        <!-- Campo Senha -->
+                        <VBox spacing="5">
+                           <children>
+                              <Label styleClass="form-label" text="Senha" />
+                              <PasswordField fx:id="passwordField" promptText="Digite sua senha" />
+                           </children>
+                        </VBox>
+                        
+                        <!-- Lembrar de mim -->
+                        <CheckBox fx:id="rememberMeCheckBox" text="Lembrar de mim" />
+                        
+                        <!-- Status/Erro -->
+                        <Label fx:id="statusLabel" styleClass="form-error" visible="false" />
+                        
+                        <!-- Progress Indicator -->
+                        <ProgressIndicator fx:id="progressIndicator" maxHeight="30" maxWidth="30" visible="false" />
+                        
+                        <!-- Botão Login -->
+                        <Button fx:id="loginButton" onAction="#handleLogin" prefWidth="200" styleClass="button,large" text="Entrar" />
+                        
+                        <!-- Links -->
+                        <HBox spacing="20" alignment="CENTER">
+                           <children>
+                              <Hyperlink onAction="#handleForgotPassword" text="Esqueci minha senha" />
+                              <Separator orientation="VERTICAL" />
+                              <Hyperlink onAction="#handleCadastro" text="Criar conta" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="20" left="20" right="20" top="20" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   
+   <!-- Footer -->
+   <bottom>
+      <HBox alignment="CENTER" spacing="20" styleClass="p-20">
+         <children>
+            <Hyperlink onAction="#handleAbout" text="Sobre" />
+            <Separator orientation="VERTICAL" />
+            <Hyperlink onAction="#handleExit" text="Sair" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

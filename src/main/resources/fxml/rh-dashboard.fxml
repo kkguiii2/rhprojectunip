@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shiftly.controller.RhDashboardController">
+   <top>
+      <VBox styleClass="dashboard-header">
+         <HBox alignment="CENTER_LEFT" spacing="20.0">
+            <Label fx:id="welcomeLabel" styleClass="label,title" text="Painel RH - Shiftly" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="currentTimeLabel" styleClass="label,small" text="--/--/---- --:--:--" />
+            <Button fx:id="logoutButton" onAction="#handleLogout" styleClass="button,secondary" text="Sair" />
+         </HBox>
+         <Label fx:id="userNameLabel" styleClass="label,subtitle" text="Bem-vindo(a), Usuário!" />
+      </VBox>
+   </top>
+   <center>
+      <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED">
+         <VBox styleClass="content-area">
+            <!-- Quick Actions -->
+            <VBox spacing="15.0">
+               <Label styleClass="label,subtitle" text="Ações Rápidas" />
+               <HBox spacing="15.0">
+                  <Button fx:id="gerenciarUsuariosButton" onAction="#handleGerenciarUsuarios" 
+                          styleClass="button,success" text="Gerenciar Usuários" />
+                  <Button fx:id="gerarRelatoriosButton" onAction="#handleGerarRelatorios" 
+                          styleClass="button" text="Gerar Relatórios" />
+                  <Button fx:id="aprovarSolicitacoesButton" onAction="#handleAprovarSolicitacoes" 
+                          styleClass="button,warning" text="Aprovar Solicitações" />
+                  <Button fx:id="configurarSistemaButton" onAction="#handleConfigurarSistema" 
+                          styleClass="button,secondary" text="Configurar Sistema" />
+               </HBox>
+            </VBox>
+
+            <!-- Status Cards -->
+            <VBox spacing="15.0">
+               <Label styleClass="label,subtitle" text="Estatísticas do Sistema" />
+               <HBox spacing="20.0">
+                  <VBox styleClass="stats-card,primary" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <Label styleClass="label,large" text="Total de Colaboradores" />
+                     <Label fx:id="totalColaboradoresLabel" styleClass="label,title" text="0" />
+                  </VBox>
+                  <VBox styleClass="stats-card,success" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <Label styleClass="label,large" text="Presentes Hoje" />
+                     <Label fx:id="presentesHojeLabel" styleClass="label,title" text="0" />
+                  </VBox>
+                  <VBox styleClass="stats-card" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <Label styleClass="label,large" text="Solicitações Pendentes" />
+                     <Label fx:id="solicitacoesPendentesLabel" styleClass="label,title" text="0" />
+                  </VBox>
+                  <VBox styleClass="stats-card" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <Label styleClass="label,large" text="Horas Extras do Mês" />
+                     <Label fx:id="horasExtrasLabel" styleClass="label,title" text="0h" />
+                  </VBox>
+               </HBox>
+            </VBox>
+
+            <!-- Pending Requests -->
+            <VBox spacing="15.0">
+               <Label styleClass="label,subtitle" text="Solicitações Pendentes" />
+               <TableView fx:id="solicitacoesTable" styleClass="table-view">
+                  <columns>
+                     <TableColumn fx:id="colaboradorColumn" prefWidth="150.0" text="Colaborador" />
+                     <TableColumn fx:id="tipoSolicitacaoColumn" prefWidth="120.0" text="Tipo" />
+                     <TableColumn fx:id="dataSolicitacaoColumn" prefWidth="120.0" text="Data" />
+                     <TableColumn fx:id="statusSolicitacaoColumn" prefWidth="100.0" text="Status" />
+                     <TableColumn fx:id="acoesSolicitacaoColumn" prefWidth="150.0" text="Ações" />
+                  </columns>
+               </TableView>
+            </VBox>
+
+            <!-- Recent Activity -->
+            <VBox spacing="15.0">
+               <Label styleClass="label,subtitle" text="Atividade Recente" />
+               <ListView fx:id="atividadeRecenteList" prefHeight="200.0" styleClass="table-view" />
+            </VBox>
+         </VBox>
+      </ScrollPane>
+   </center>
+</BorderPane>
