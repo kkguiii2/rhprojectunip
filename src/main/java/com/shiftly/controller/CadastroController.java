@@ -13,6 +13,8 @@ import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 
 import java.net.URL;
 import java.time.LocalDate;
@@ -373,9 +375,11 @@ public class CadastroController implements Initializable {
     @FXML
     private void handleVoltar() {
         try {
-            // Navega para a tela de login
             Stage currentStage = (Stage) voltarButton.getScene().getWindow();
-            Scene loginScene = new Scene(javafx.fxml.FXMLLoader.load(getClass().getResource("/fxml/login.fxml")));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/login.fxml"));
+            Parent root = loader.load();
+            Scene loginScene = new Scene(root);
+            loginScene.getStylesheets().add(getClass().getResource("/css/styles.css").toExternalForm());
             currentStage.setScene(loginScene);
             currentStage.setTitle("Shiftly - Login");
         } catch (Exception e) {

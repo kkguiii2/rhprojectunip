@@ -4,6 +4,8 @@ import com.shiftly.service.AuthService;
 import javafx.application.Platform;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
@@ -243,9 +245,11 @@ public class LoginController extends BaseController {
     @FXML
     private void handleCadastro() {
         try {
-            // Navega para a tela de cadastro
             Stage currentStage = (Stage) loginButton.getScene().getWindow();
-            Scene cadastroScene = new Scene(javafx.fxml.FXMLLoader.load(getClass().getResource("/fxml/cadastro.fxml")));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/cadastro.fxml"));
+            Parent root = loader.load();
+            Scene cadastroScene = new Scene(root);
+            cadastroScene.getStylesheets().add(getClass().getResource("/css/styles.css").toExternalForm());
             currentStage.setScene(cadastroScene);
             currentStage.setTitle("Shiftly - Cadastro");
         } catch (Exception e) {

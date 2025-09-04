@@ -3728,3 +3728,1040 @@ Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Nome de objeto 'usua
 2025-09-01 15:51:05.686 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Finalizando aplicação...
 2025-09-01 15:51:05.686 [JavaFX Application Thread] INFO  c.s.repository.DatabaseSynchronizer - Sincronização automática interrompida
 2025-09-01 15:51:05.686 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Aplicação finalizada
+2025-09-04 16:01:53.210 [main] INFO  com.shiftly.app.ShiftlyApplication - Iniciando Shiftly...
+2025-09-04 16:01:53.214 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - === Inicializando Shiftly v1.0.0 ===
+2025-09-04 16:01:53.215 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Inicializando sistema de banco de dados...
+2025-09-04 16:01:53.218 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - Configurações carregadas com sucesso
+2025-09-04 16:01:53.218 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - === CONFIGURAÇÕES CARREGADAS ===
+2025-09-04 16:01:53.218 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.password = [HIDDEN]
+2025-09-04 16:01:53.218 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.path = logs/
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.theme = default
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.window.min.height = 800
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - resources.comprovantes.max.size = 10485760
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - sync.interval.seconds = 30
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - security.lockout.duration.minutes = 15
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.url = jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.max.size = 10MB
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.level.com.shiftly = INFO
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - sync.auto.enabled = true
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.host = localhost
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - dev.show.sql = false
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.max.dia = 4.0
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ferias.dias.ano = 30
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.password = [HIDDEN]
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.database = ShiftlyDB
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.max.history = 30
+2025-09-04 16:01:53.219 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.name = Shiftly
+2025-09-04 16:01:53.220 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.level.root = WARN
+2025-09-04 16:01:53.220 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.port = 1433
+2025-09-04 16:01:53.220 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.expiration.refresh = 604800000
+2025-09-04 16:01:53.220 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - security.max.login.attempts = 5
+2025-09-04 16:01:53.220 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.username = sa
+2025-09-04 16:01:53.220 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.adicional.percentual = 0.5
+2025-09-04 16:01:53.220 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.secret = ShiftlySecretKeyForJWT2024!ComplexAndSecureKey123456789
+2025-09-04 16:01:53.220 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.expiration.access = 28800000
+2025-09-04 16:01:53.220 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.version = 1.0.0
+2025-09-04 16:01:53.220 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.description = Sistema de Controle de Ponto EletrÃ´nico
+2025-09-04 16:01:53.220 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ferias.antecedencia.minima.dias = 30
+2025-09-04 16:01:53.220 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.window.min.width = 1200
+2025-09-04 16:01:53.220 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.username = sa
+2025-09-04 16:01:53.221 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - resources.comprovantes.directory = comprovantes
+2025-09-04 16:01:53.221 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - dev.mode = false
+2025-09-04 16:01:53.221 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.max.mes = 60.0
+2025-09-04 16:01:53.221 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - === FIM DAS CONFIGURAÇÕES ===
+2025-09-04 16:01:53.222 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.url = jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE (padrão: jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE)
+2025-09-04 16:01:53.222 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.username = sa (padrão: sa)
+2025-09-04 16:01:53.222 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.password =  (padrão: )
+2025-09-04 16:01:53.222 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - === Testando conectividade dos bancos ===
+2025-09-04 16:01:53.622 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - ✓ SQL Server: Conectado com sucesso
+2025-09-04 16:01:53.805 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - ✓ H2: Conectado com sucesso
+2025-09-04 16:01:53.805 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - === Fim do teste de conectividade ===
+2025-09-04 16:01:53.817 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - === INICIALIZAÇÃO DO BANCO DE DADOS ===
+2025-09-04 16:01:53.817 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Iniciando criação das estruturas do banco de dados...
+2025-09-04 16:01:53.844 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:01:53.845 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - SQL Server disponível - inicializando...
+2025-09-04 16:01:53.845 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Inicializando SQL Server...
+2025-09-04 16:01:53.877 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Banco ShiftlyDB criado/verificado com sucesso
+2025-09-04 16:01:53.878 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Executando script completo do SQL Server...
+2025-09-04 16:01:53.902 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Tentando carregar script: /database/create-database-simple.sql
+2025-09-04 16:01:53.910 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script carregado com sucesso: /database/create-database-simple.sql (19278 caracteres)
+2025-09-04 16:01:53.910 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Iniciando execução do script SQL...
+2025-09-04 16:01:53.915 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script dividido em 1 comandos
+2025-09-04 16:01:53.924 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script executado: 1 comandos processados, 0 falharam
+2025-09-04 16:01:53.924 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script simplificado do SQL Server executado com sucesso
+2025-09-04 16:01:53.924 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - SQL Server inicializado com sucesso
+2025-09-04 16:01:53.924 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - === BANCO DE DADOS INICIALIZADO COM SUCESSO ===
+2025-09-04 16:01:53.924 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Sistema de banco de dados inicializado com sucesso
+2025-09-04 16:01:53.924 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Iniciando sincronização automática...
+2025-09-04 16:01:53.927 [JavaFX-Launcher] INFO  c.s.repository.DatabaseSynchronizer - Sincronização automática iniciada (verificação a cada 30 segundos)
+2025-09-04 16:01:53.931 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Sincronização automática iniciada
+2025-09-04 16:01:53.931 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Aplicação inicializada com sucesso
+2025-09-04 16:01:53.951 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Iniciando interface gráfica...
+2025-09-04 16:01:54.166 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Tela de login inicializada
+2025-09-04 16:01:54.210 [JavaFX Application Thread] WARN  com.shiftly.app.ShiftlyApplication - Não foi possível carregar ícone da aplicação: Input stream must not be null
+2025-09-04 16:01:54.632 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Interface gráfica iniciada com sucesso
+2025-09-04 16:01:58.706 [Thread-3] INFO  com.shiftly.service.AuthService - Tentativa de login para: guilherme@teste.com
+2025-09-04 16:01:58.707 [Thread-3] INFO  com.shiftly.service.UsuarioService - Tentativa de autenticação para email: guilherme@teste.com
+2025-09-04 16:01:58.728 [Thread-3] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:01:58.907 [Thread-3] WARN  com.shiftly.service.UsuarioService - Senha incorreta para: guilherme@teste.com
+2025-09-04 16:01:58.908 [Thread-3] WARN  com.shiftly.service.AuthService - Login falhado para: guilherme@teste.com
+2025-09-04 16:02:02.979 [JavaFX Application Thread] INFO  c.s.controller.CadastroController - Tela de cadastro inicializada
+2025-09-04 16:02:04.977 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Tela de login inicializada
+2025-09-04 16:02:06.501 [Thread-4] INFO  com.shiftly.service.AuthService - Tentativa de login para: guilherme@teste.com
+2025-09-04 16:02:06.502 [Thread-4] INFO  com.shiftly.service.UsuarioService - Tentativa de autenticação para email: guilherme@teste.com
+2025-09-04 16:02:06.522 [Thread-4] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:02:06.621 [Thread-4] WARN  com.shiftly.service.UsuarioService - Senha incorreta para: guilherme@teste.com
+2025-09-04 16:02:06.622 [Thread-4] WARN  com.shiftly.service.AuthService - Login falhado para: guilherme@teste.com
+2025-09-04 16:02:12.745 [JavaFX Application Thread] INFO  c.s.controller.CadastroController - Tela de cadastro inicializada
+2025-09-04 16:02:42.067 [JavaFX Application Thread] INFO  c.s.controller.CadastroController - Iniciando cadastro de usuário...
+2025-09-04 16:02:42.070 [Thread-5] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:02:42.093 [Thread-5] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:02:42.134 [Thread-5] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:02:42.158 [Thread-5] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:02:42.161 [Thread-5] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:02:42.238 [Thread-5] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:02:44.251 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Tela de login inicializada
+2025-09-04 16:02:46.127 [Thread-7] INFO  com.shiftly.service.AuthService - Tentativa de login para: guilherm22e@teste.com
+2025-09-04 16:02:46.128 [Thread-7] INFO  com.shiftly.service.UsuarioService - Tentativa de autenticação para email: guilherm22e@teste.com
+2025-09-04 16:02:46.147 [Thread-7] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:02:46.168 [Thread-7] WARN  com.shiftly.service.UsuarioService - Usuário não encontrado: guilherm22e@teste.com
+2025-09-04 16:02:46.169 [Thread-7] WARN  com.shiftly.service.AuthService - Login falhado para: guilherm22e@teste.com
+2025-09-04 16:02:53.950 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - SQL Server online, iniciando sincronização automática...
+2025-09-04 16:02:53.950 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Iniciando sincronização de todos os dados pendentes...
+2025-09-04 16:02:53.950 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronizando 1 usuários pendentes...
+2025-09-04 16:02:53.950 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:02:53.967 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:02:54.002 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:02:54.021 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:02:54.021 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:02:54.097 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:02:54.098 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronização concluída com sucesso
+2025-09-04 16:02:58.539 [Thread-8] INFO  com.shiftly.service.AuthService - Tentativa de login para: guilherm22e@teste.com
+2025-09-04 16:02:58.539 [Thread-8] INFO  com.shiftly.service.UsuarioService - Tentativa de autenticação para email: guilherm22e@teste.com
+2025-09-04 16:02:58.557 [Thread-8] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:02:58.576 [Thread-8] WARN  com.shiftly.service.UsuarioService - Usuário não encontrado: guilherm22e@teste.com
+2025-09-04 16:02:58.576 [Thread-8] WARN  com.shiftly.service.AuthService - Login falhado para: guilherm22e@teste.com
+2025-09-04 16:03:00.342 [JavaFX Application Thread] INFO  c.s.controller.CadastroController - Tela de cadastro inicializada
+2025-09-04 16:03:01.781 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Tela de login inicializada
+2025-09-04 16:03:03.582 [Thread-9] INFO  com.shiftly.service.AuthService - Tentativa de login para: guilherm22e@teste.com
+2025-09-04 16:03:03.582 [Thread-9] INFO  com.shiftly.service.UsuarioService - Tentativa de autenticação para email: guilherm22e@teste.com
+2025-09-04 16:03:03.600 [Thread-9] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:03:03.618 [Thread-9] WARN  com.shiftly.service.UsuarioService - Usuário não encontrado: guilherm22e@teste.com
+2025-09-04 16:03:03.618 [Thread-9] WARN  com.shiftly.service.AuthService - Login falhado para: guilherm22e@teste.com
+2025-09-04 16:03:09.396 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Finalizando aplicação...
+2025-09-04 16:03:09.396 [JavaFX Application Thread] INFO  c.s.repository.DatabaseSynchronizer - Sincronização automática interrompida
+2025-09-04 16:03:09.396 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Aplicação finalizada
+2025-09-04 16:03:31.929 [main] INFO  com.shiftly.app.ShiftlyApplication - Iniciando Shiftly...
+2025-09-04 16:03:31.934 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - === Inicializando Shiftly v1.0.0 ===
+2025-09-04 16:03:31.935 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Inicializando sistema de banco de dados...
+2025-09-04 16:03:31.938 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - Configurações carregadas com sucesso
+2025-09-04 16:03:31.938 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - === CONFIGURAÇÕES CARREGADAS ===
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.password = [HIDDEN]
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.path = logs/
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.theme = default
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.window.min.height = 800
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - resources.comprovantes.max.size = 10485760
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - sync.interval.seconds = 30
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - security.lockout.duration.minutes = 15
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.url = jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.max.size = 10MB
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.level.com.shiftly = INFO
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - sync.auto.enabled = true
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.host = localhost
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - dev.show.sql = false
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.max.dia = 4.0
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ferias.dias.ano = 30
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.password = [HIDDEN]
+2025-09-04 16:03:31.939 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.database = ShiftlyDB
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.max.history = 30
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.name = Shiftly
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.level.root = WARN
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.port = 1433
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.expiration.refresh = 604800000
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - security.max.login.attempts = 5
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.username = sa
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.adicional.percentual = 0.5
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.secret = ShiftlySecretKeyForJWT2024!ComplexAndSecureKey123456789
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.expiration.access = 28800000
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.version = 1.0.0
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.description = Sistema de Controle de Ponto EletrÃ´nico
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ferias.antecedencia.minima.dias = 30
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.window.min.width = 1200
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.username = sa
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - resources.comprovantes.directory = comprovantes
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - dev.mode = false
+2025-09-04 16:03:31.940 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.max.mes = 60.0
+2025-09-04 16:03:31.941 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - === FIM DAS CONFIGURAÇÕES ===
+2025-09-04 16:03:31.941 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.url = jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE (padrão: jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE)
+2025-09-04 16:03:31.941 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.username = sa (padrão: sa)
+2025-09-04 16:03:31.941 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.password =  (padrão: )
+2025-09-04 16:03:31.941 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - === Testando conectividade dos bancos ===
+2025-09-04 16:03:32.343 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - ✓ SQL Server: Conectado com sucesso
+2025-09-04 16:03:32.539 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - ✓ H2: Conectado com sucesso
+2025-09-04 16:03:32.539 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - === Fim do teste de conectividade ===
+2025-09-04 16:03:32.550 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - === INICIALIZAÇÃO DO BANCO DE DADOS ===
+2025-09-04 16:03:32.550 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Iniciando criação das estruturas do banco de dados...
+2025-09-04 16:03:32.576 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:03:32.577 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - SQL Server disponível - inicializando...
+2025-09-04 16:03:32.577 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Inicializando SQL Server...
+2025-09-04 16:03:32.607 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Banco ShiftlyDB criado/verificado com sucesso
+2025-09-04 16:03:32.607 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Executando script completo do SQL Server...
+2025-09-04 16:03:32.633 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Tentando carregar script: /database/create-database-simple.sql
+2025-09-04 16:03:32.640 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script carregado com sucesso: /database/create-database-simple.sql (19278 caracteres)
+2025-09-04 16:03:32.640 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Iniciando execução do script SQL...
+2025-09-04 16:03:32.643 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script dividido em 1 comandos
+2025-09-04 16:03:32.652 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script executado: 1 comandos processados, 0 falharam
+2025-09-04 16:03:32.652 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script simplificado do SQL Server executado com sucesso
+2025-09-04 16:03:32.652 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - SQL Server inicializado com sucesso
+2025-09-04 16:03:32.652 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - === BANCO DE DADOS INICIALIZADO COM SUCESSO ===
+2025-09-04 16:03:32.652 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Sistema de banco de dados inicializado com sucesso
+2025-09-04 16:03:32.652 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Iniciando sincronização automática...
+2025-09-04 16:03:32.655 [JavaFX-Launcher] INFO  c.s.repository.DatabaseSynchronizer - Sincronização automática iniciada (verificação a cada 30 segundos)
+2025-09-04 16:03:32.658 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Sincronização automática iniciada
+2025-09-04 16:03:32.659 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Aplicação inicializada com sucesso
+2025-09-04 16:03:32.676 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Iniciando interface gráfica...
+2025-09-04 16:03:32.889 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Tela de login inicializada
+2025-09-04 16:03:32.937 [JavaFX Application Thread] WARN  com.shiftly.app.ShiftlyApplication - Não foi possível carregar ícone da aplicação: Input stream must not be null
+2025-09-04 16:03:33.362 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Interface gráfica iniciada com sucesso
+2025-09-04 16:03:37.681 [Thread-3] INFO  com.shiftly.service.AuthService - Tentativa de login para: guilherm22e@teste.com
+2025-09-04 16:03:37.681 [Thread-3] INFO  com.shiftly.service.UsuarioService - Tentativa de autenticação para email: guilherm22e@teste.com
+2025-09-04 16:03:37.702 [Thread-3] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:03:37.779 [Thread-3] WARN  com.shiftly.service.UsuarioService - Usuário não encontrado: guilherm22e@teste.com
+2025-09-04 16:03:37.780 [Thread-3] WARN  com.shiftly.service.AuthService - Login falhado para: guilherm22e@teste.com
+2025-09-04 16:03:41.355 [JavaFX Application Thread] INFO  c.s.controller.CadastroController - Tela de cadastro inicializada
+2025-09-04 16:04:05.314 [JavaFX Application Thread] INFO  c.s.controller.CadastroController - Iniciando cadastro de usuário...
+2025-09-04 16:04:05.318 [Thread-4] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:04:05.344 [Thread-4] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:05.383 [Thread-4] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:05.407 [Thread-4] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:04:05.410 [Thread-4] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:04:05.505 [Thread-4] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:04:07.516 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Tela de login inicializada
+2025-09-04 16:04:09.901 [Thread-6] INFO  com.shiftly.service.AuthService - Tentativa de login para: guilherme1@teste.com
+2025-09-04 16:04:09.901 [Thread-6] INFO  com.shiftly.service.UsuarioService - Tentativa de autenticação para email: guilherme1@teste.com
+2025-09-04 16:04:09.920 [Thread-6] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:09.939 [Thread-6] WARN  com.shiftly.service.UsuarioService - Usuário não encontrado: guilherme1@teste.com
+2025-09-04 16:04:09.939 [Thread-6] WARN  com.shiftly.service.AuthService - Login falhado para: guilherme1@teste.com
+2025-09-04 16:04:16.323 [JavaFX Application Thread] INFO  c.s.controller.CadastroController - Tela de cadastro inicializada
+2025-09-04 16:04:32.677 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - SQL Server online, iniciando sincronização automática...
+2025-09-04 16:04:32.678 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Iniciando sincronização de todos os dados pendentes...
+2025-09-04 16:04:32.678 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronizando 1 usuários pendentes...
+2025-09-04 16:04:32.678 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:04:32.695 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:32.731 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:32.749 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:04:32.750 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:04:32.826 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:04:32.826 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronização concluída com sucesso
+2025-09-04 16:04:42.042 [JavaFX Application Thread] INFO  c.s.controller.CadastroController - Iniciando cadastro de usuário...
+2025-09-04 16:04:42.044 [Thread-7] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme22@teste.com
+2025-09-04 16:04:42.063 [Thread-7] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:42.100 [Thread-7] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:42.226 [Thread-7] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:42.265 [Thread-7] INFO  com.shiftly.service.UsuarioService - Usuário criado com sucesso no banco: ID 8
+2025-09-04 16:04:44.273 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Tela de login inicializada
+2025-09-04 16:04:45.879 [Thread-9] INFO  com.shiftly.service.AuthService - Tentativa de login para: guilherme22@teste.com
+2025-09-04 16:04:45.880 [Thread-9] INFO  com.shiftly.service.UsuarioService - Tentativa de autenticação para email: guilherme22@teste.com
+2025-09-04 16:04:45.897 [Thread-9] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:45.993 [Thread-9] INFO  com.shiftly.service.UsuarioService - Autenticação bem-sucedida para: guilherme22@teste.com
+2025-09-04 16:04:46.000 [Thread-9] INFO  com.shiftly.util.JwtUtil - Gerando token JWT para usuário: guilherme22@teste.com
+2025-09-04 16:04:46.186 [Thread-9] INFO  com.shiftly.util.JwtUtil - Gerando refresh token para usuário: guilherme22@teste.com
+2025-09-04 16:04:46.188 [Thread-9] INFO  com.shiftly.service.AuthService - Login bem-sucedido para: guilherme22@teste.com
+2025-09-04 16:04:46.194 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Login realizado com sucesso para: guilherme22@teste.com
+2025-09-04 16:04:46.250 [JavaFX Application Thread] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:46.378 [JavaFX Application Thread] INFO  c.shiftly.service.ComprovanteService - Diretório de comprovantes criado: C:\Users\kkgui\Desktop\2\rhprojectunip\comprovantes
+2025-09-04 16:04:46.402 [JavaFX Application Thread] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:46.420 [JavaFX Application Thread] INFO  c.s.c.ColaboradorDashboardController - Dashboard do colaborador inicializado
+2025-09-04 16:04:46.439 [Thread-10] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:46.482 [Thread-10] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:46.503 [Thread-10] ERROR c.s.repository.HorasExtrasRepository - Erro ao executar operação no banco: Nome de coluna 'pago' inválido.
+com.microsoft.sqlserver.jdbc.SQLServerException: Nome de coluna 'pago' inválido.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(SQLServerPreparedStatement.java:485)
+	at com.shiftly.repository.HorasExtrasRepository.lambda$findByUsuarioIdAndStatus$8(HorasExtrasRepository.java:212)
+	at com.shiftly.repository.BaseRepository.executeWithConnection(BaseRepository.java:100)
+	at com.shiftly.repository.HorasExtrasRepository.findByUsuarioIdAndStatus(HorasExtrasRepository.java:199)
+	at com.shiftly.service.HorasExtrasService.calcularSaldoHorasExtras(HorasExtrasService.java:250)
+	at com.shiftly.controller.ColaboradorDashboardController.loadStatusCards(ColaboradorDashboardController.java:297)
+	at com.shiftly.controller.ColaboradorDashboardController$4.call(ColaboradorDashboardController.java:267)
+	at com.shiftly.controller.ColaboradorDashboardController$4.call(ColaboradorDashboardController.java:264)
+	at javafx.graphics@19.0.2.1/javafx.concurrent.Task$TaskCallable.call(Task.java:1426)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-09-04 16:04:46.649 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Navegou para: Shiftly - Meu Painel - /fxml/colaborador-dashboard.fxml
+2025-09-04 16:04:46.651 [JavaFX Application Thread] ERROR c.s.c.ColaboradorDashboardController - Erro ao carregar dados do dashboard: Erro de banco de dados
+java.lang.RuntimeException: Erro de banco de dados
+	at com.shiftly.repository.BaseRepository.executeWithConnection(BaseRepository.java:103)
+	at com.shiftly.repository.HorasExtrasRepository.findByUsuarioIdAndStatus(HorasExtrasRepository.java:199)
+	at com.shiftly.service.HorasExtrasService.calcularSaldoHorasExtras(HorasExtrasService.java:250)
+	at com.shiftly.controller.ColaboradorDashboardController.loadStatusCards(ColaboradorDashboardController.java:297)
+	at com.shiftly.controller.ColaboradorDashboardController$4.call(ColaboradorDashboardController.java:267)
+	at com.shiftly.controller.ColaboradorDashboardController$4.call(ColaboradorDashboardController.java:264)
+	at javafx.graphics@19.0.2.1/javafx.concurrent.Task$TaskCallable.call(Task.java:1426)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Nome de coluna 'pago' inválido.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(SQLServerPreparedStatement.java:485)
+	at com.shiftly.repository.HorasExtrasRepository.lambda$findByUsuarioIdAndStatus$8(HorasExtrasRepository.java:212)
+	at com.shiftly.repository.BaseRepository.executeWithConnection(BaseRepository.java:100)
+	... 8 common frames omitted
+2025-09-04 16:04:53.204 [JavaFX Application Thread] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:53.238 [Thread-11] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:53.273 [Thread-11] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:04:53.291 [Thread-11] ERROR c.s.repository.HorasExtrasRepository - Erro ao executar operação no banco: Nome de coluna 'pago' inválido.
+com.microsoft.sqlserver.jdbc.SQLServerException: Nome de coluna 'pago' inválido.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(SQLServerPreparedStatement.java:485)
+	at com.shiftly.repository.HorasExtrasRepository.lambda$findByUsuarioIdAndStatus$8(HorasExtrasRepository.java:212)
+	at com.shiftly.repository.BaseRepository.executeWithConnection(BaseRepository.java:100)
+	at com.shiftly.repository.HorasExtrasRepository.findByUsuarioIdAndStatus(HorasExtrasRepository.java:199)
+	at com.shiftly.service.HorasExtrasService.calcularSaldoHorasExtras(HorasExtrasService.java:250)
+	at com.shiftly.controller.ColaboradorDashboardController.loadStatusCards(ColaboradorDashboardController.java:297)
+	at com.shiftly.controller.ColaboradorDashboardController$4.call(ColaboradorDashboardController.java:267)
+	at com.shiftly.controller.ColaboradorDashboardController$4.call(ColaboradorDashboardController.java:264)
+	at javafx.graphics@19.0.2.1/javafx.concurrent.Task$TaskCallable.call(Task.java:1426)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-09-04 16:04:53.291 [JavaFX Application Thread] ERROR c.s.c.ColaboradorDashboardController - Erro ao carregar dados do dashboard: Erro de banco de dados
+java.lang.RuntimeException: Erro de banco de dados
+	at com.shiftly.repository.BaseRepository.executeWithConnection(BaseRepository.java:103)
+	at com.shiftly.repository.HorasExtrasRepository.findByUsuarioIdAndStatus(HorasExtrasRepository.java:199)
+	at com.shiftly.service.HorasExtrasService.calcularSaldoHorasExtras(HorasExtrasService.java:250)
+	at com.shiftly.controller.ColaboradorDashboardController.loadStatusCards(ColaboradorDashboardController.java:297)
+	at com.shiftly.controller.ColaboradorDashboardController$4.call(ColaboradorDashboardController.java:267)
+	at com.shiftly.controller.ColaboradorDashboardController$4.call(ColaboradorDashboardController.java:264)
+	at javafx.graphics@19.0.2.1/javafx.concurrent.Task$TaskCallable.call(Task.java:1426)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Nome de coluna 'pago' inválido.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(SQLServerPreparedStatement.java:485)
+	at com.shiftly.repository.HorasExtrasRepository.lambda$findByUsuarioIdAndStatus$8(HorasExtrasRepository.java:212)
+	at com.shiftly.repository.BaseRepository.executeWithConnection(BaseRepository.java:100)
+	... 8 common frames omitted
+2025-09-04 16:04:58.119 [JavaFX Application Thread] INFO  com.shiftly.service.AuthService - Realizando logout
+2025-09-04 16:04:58.120 [JavaFX Application Thread] INFO  com.shiftly.service.AuthService - Logout realizado para usuário ID: 8
+2025-09-04 16:04:58.125 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Tela de login inicializada
+2025-09-04 16:04:58.156 [JavaFX Application Thread] INFO  c.s.c.ColaboradorDashboardController - Navegou para: Shiftly - Login - /fxml/login.fxml
+2025-09-04 16:04:58.156 [JavaFX Application Thread] INFO  c.s.c.ColaboradorDashboardController - Logout realizado
+2025-09-04 16:05:01.838 [Thread-12] INFO  com.shiftly.service.AuthService - Tentativa de login para: guilherme22@teste.com
+2025-09-04 16:05:01.838 [Thread-12] INFO  com.shiftly.service.UsuarioService - Tentativa de autenticação para email: guilherme22@teste.com
+2025-09-04 16:05:01.857 [Thread-12] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:05:01.952 [Thread-12] INFO  com.shiftly.service.UsuarioService - Autenticação bem-sucedida para: guilherme22@teste.com
+2025-09-04 16:05:01.952 [Thread-12] INFO  com.shiftly.util.JwtUtil - Gerando token JWT para usuário: guilherme22@teste.com
+2025-09-04 16:05:01.953 [Thread-12] INFO  com.shiftly.util.JwtUtil - Gerando refresh token para usuário: guilherme22@teste.com
+2025-09-04 16:05:01.954 [Thread-12] INFO  com.shiftly.service.AuthService - Login bem-sucedido para: guilherme22@teste.com
+2025-09-04 16:05:01.954 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Login realizado com sucesso para: guilherme22@teste.com
+2025-09-04 16:05:01.975 [JavaFX Application Thread] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:05:02.045 [JavaFX Application Thread] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:05:02.061 [JavaFX Application Thread] INFO  c.s.c.ColaboradorDashboardController - Dashboard do colaborador inicializado
+2025-09-04 16:05:02.080 [Thread-13] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:05:02.124 [Thread-13] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:05:02.140 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Navegou para: Shiftly - Meu Painel - /fxml/colaborador-dashboard.fxml
+2025-09-04 16:05:02.149 [Thread-13] ERROR c.s.repository.HorasExtrasRepository - Erro ao executar operação no banco: Nome de coluna 'pago' inválido.
+com.microsoft.sqlserver.jdbc.SQLServerException: Nome de coluna 'pago' inválido.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(SQLServerPreparedStatement.java:485)
+	at com.shiftly.repository.HorasExtrasRepository.lambda$findByUsuarioIdAndStatus$8(HorasExtrasRepository.java:212)
+	at com.shiftly.repository.BaseRepository.executeWithConnection(BaseRepository.java:100)
+	at com.shiftly.repository.HorasExtrasRepository.findByUsuarioIdAndStatus(HorasExtrasRepository.java:199)
+	at com.shiftly.service.HorasExtrasService.calcularSaldoHorasExtras(HorasExtrasService.java:250)
+	at com.shiftly.controller.ColaboradorDashboardController.loadStatusCards(ColaboradorDashboardController.java:297)
+	at com.shiftly.controller.ColaboradorDashboardController$4.call(ColaboradorDashboardController.java:267)
+	at com.shiftly.controller.ColaboradorDashboardController$4.call(ColaboradorDashboardController.java:264)
+	at javafx.graphics@19.0.2.1/javafx.concurrent.Task$TaskCallable.call(Task.java:1426)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-09-04 16:05:02.150 [JavaFX Application Thread] ERROR c.s.c.ColaboradorDashboardController - Erro ao carregar dados do dashboard: Erro de banco de dados
+java.lang.RuntimeException: Erro de banco de dados
+	at com.shiftly.repository.BaseRepository.executeWithConnection(BaseRepository.java:103)
+	at com.shiftly.repository.HorasExtrasRepository.findByUsuarioIdAndStatus(HorasExtrasRepository.java:199)
+	at com.shiftly.service.HorasExtrasService.calcularSaldoHorasExtras(HorasExtrasService.java:250)
+	at com.shiftly.controller.ColaboradorDashboardController.loadStatusCards(ColaboradorDashboardController.java:297)
+	at com.shiftly.controller.ColaboradorDashboardController$4.call(ColaboradorDashboardController.java:267)
+	at com.shiftly.controller.ColaboradorDashboardController$4.call(ColaboradorDashboardController.java:264)
+	at javafx.graphics@19.0.2.1/javafx.concurrent.Task$TaskCallable.call(Task.java:1426)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Nome de coluna 'pago' inválido.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(SQLServerPreparedStatement.java:485)
+	at com.shiftly.repository.HorasExtrasRepository.lambda$findByUsuarioIdAndStatus$8(HorasExtrasRepository.java:212)
+	at com.shiftly.repository.BaseRepository.executeWithConnection(BaseRepository.java:100)
+	... 8 common frames omitted
+2025-09-04 16:05:04.005 [JavaFX Application Thread] INFO  com.shiftly.service.AuthService - Realizando logout
+2025-09-04 16:05:04.005 [JavaFX Application Thread] INFO  com.shiftly.service.AuthService - Logout realizado para usuário ID: 8
+2025-09-04 16:05:04.011 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Tela de login inicializada
+2025-09-04 16:05:04.039 [JavaFX Application Thread] INFO  c.s.c.ColaboradorDashboardController - Navegou para: Shiftly - Login - /fxml/login.fxml
+2025-09-04 16:05:04.039 [JavaFX Application Thread] INFO  c.s.c.ColaboradorDashboardController - Logout realizado
+2025-09-04 16:07:13.047 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Solicitação de fechamento da aplicação
+2025-09-04 16:07:13.053 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Finalizando aplicação...
+2025-09-04 16:07:13.054 [JavaFX Application Thread] INFO  c.s.repository.DatabaseSynchronizer - Sincronização automática interrompida
+2025-09-04 16:07:13.054 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Aplicação finalizada
+2025-09-04 16:07:53.958 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - SQL Server online, iniciando sincronização automática...
+2025-09-04 16:07:53.958 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Iniciando sincronização de todos os dados pendentes...
+2025-09-04 16:07:53.958 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronizando 2 usuários pendentes...
+2025-09-04 16:07:53.958 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:07:53.974 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:07:54.008 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:07:54.026 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:07:54.026 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:07:54.102 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:07:54.102 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:07:54.119 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:07:54.152 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:07:54.169 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:07:54.169 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:07:54.245 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:07:54.246 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronização concluída com sucesso
+2025-09-04 16:09:20.319 [main] INFO  com.shiftly.app.ShiftlyApplication - Iniciando Shiftly...
+2025-09-04 16:09:20.323 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - === Inicializando Shiftly v1.0.0 ===
+2025-09-04 16:09:20.324 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Inicializando sistema de banco de dados...
+2025-09-04 16:09:20.327 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - Configurações carregadas com sucesso
+2025-09-04 16:09:20.327 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - === CONFIGURAÇÕES CARREGADAS ===
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.password = [HIDDEN]
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.path = logs/
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.theme = default
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.window.min.height = 800
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - resources.comprovantes.max.size = 10485760
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - sync.interval.seconds = 30
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - security.lockout.duration.minutes = 15
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.url = jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.max.size = 10MB
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.level.com.shiftly = INFO
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - sync.auto.enabled = true
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.host = localhost
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - dev.show.sql = false
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.max.dia = 4.0
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ferias.dias.ano = 30
+2025-09-04 16:09:20.329 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.password = [HIDDEN]
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.database = ShiftlyDB
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.max.history = 30
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.name = Shiftly
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.level.root = WARN
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.port = 1433
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.expiration.refresh = 604800000
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - security.max.login.attempts = 5
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.username = sa
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.adicional.percentual = 0.5
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.secret = ShiftlySecretKeyForJWT2024!ComplexAndSecureKey123456789
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.expiration.access = 28800000
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.version = 1.0.0
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.description = Sistema de Controle de Ponto EletrÃ´nico
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ferias.antecedencia.minima.dias = 30
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.window.min.width = 1200
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.username = sa
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - resources.comprovantes.directory = comprovantes
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - dev.mode = false
+2025-09-04 16:09:20.330 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.max.mes = 60.0
+2025-09-04 16:09:20.331 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - === FIM DAS CONFIGURAÇÕES ===
+2025-09-04 16:09:20.331 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.url = jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE (padrão: jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE)
+2025-09-04 16:09:20.331 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.username = sa (padrão: sa)
+2025-09-04 16:09:20.331 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.password =  (padrão: )
+2025-09-04 16:09:20.332 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - === Testando conectividade dos bancos ===
+2025-09-04 16:09:20.730 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - ✓ SQL Server: Conectado com sucesso
+2025-09-04 16:09:20.916 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - ✓ H2: Conectado com sucesso
+2025-09-04 16:09:20.916 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - === Fim do teste de conectividade ===
+2025-09-04 16:09:20.927 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - === INICIALIZAÇÃO DO BANCO DE DADOS ===
+2025-09-04 16:09:20.928 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Iniciando criação das estruturas do banco de dados...
+2025-09-04 16:09:20.954 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:09:20.955 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - SQL Server disponível - inicializando...
+2025-09-04 16:09:20.955 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Inicializando SQL Server...
+2025-09-04 16:09:20.987 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Banco ShiftlyDB criado/verificado com sucesso
+2025-09-04 16:09:20.987 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Executando script completo do SQL Server...
+2025-09-04 16:09:21.012 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Tentando carregar script: /database/create-database-simple.sql
+2025-09-04 16:09:21.019 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script carregado com sucesso: /database/create-database-simple.sql (19278 caracteres)
+2025-09-04 16:09:21.019 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Iniciando execução do script SQL...
+2025-09-04 16:09:21.023 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script dividido em 1 comandos
+2025-09-04 16:09:21.032 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script executado: 1 comandos processados, 0 falharam
+2025-09-04 16:09:21.032 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script simplificado do SQL Server executado com sucesso
+2025-09-04 16:09:21.032 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - SQL Server inicializado com sucesso
+2025-09-04 16:09:21.033 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - === BANCO DE DADOS INICIALIZADO COM SUCESSO ===
+2025-09-04 16:09:21.033 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Sistema de banco de dados inicializado com sucesso
+2025-09-04 16:09:21.033 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Iniciando sincronização automática...
+2025-09-04 16:09:21.036 [JavaFX-Launcher] INFO  c.s.repository.DatabaseSynchronizer - Sincronização automática iniciada (verificação a cada 30 segundos)
+2025-09-04 16:09:21.040 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Sincronização automática iniciada
+2025-09-04 16:09:21.040 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Aplicação inicializada com sucesso
+2025-09-04 16:09:21.058 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Iniciando interface gráfica...
+2025-09-04 16:09:21.273 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Tela de login inicializada
+2025-09-04 16:09:21.320 [JavaFX Application Thread] WARN  com.shiftly.app.ShiftlyApplication - Não foi possível carregar ícone da aplicação: Input stream must not be null
+2025-09-04 16:09:21.743 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Interface gráfica iniciada com sucesso
+2025-09-04 16:09:23.507 [JavaFX Application Thread] INFO  c.s.controller.CadastroController - Tela de cadastro inicializada
+2025-09-04 16:09:32.677 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - SQL Server online, iniciando sincronização automática...
+2025-09-04 16:09:32.677 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Iniciando sincronização de todos os dados pendentes...
+2025-09-04 16:09:32.677 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronizando 2 usuários pendentes...
+2025-09-04 16:09:32.678 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:09:32.694 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:09:32.729 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:09:32.747 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:09:32.747 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:09:32.824 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:09:32.824 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:09:32.840 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:09:32.874 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:09:32.898 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:09:32.903 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:09:32.980 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:09:32.980 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronização concluída com sucesso
+2025-09-04 16:11:37.032 [main] INFO  com.shiftly.app.ShiftlyApplication - Iniciando Shiftly...
+2025-09-04 16:11:37.037 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - === Inicializando Shiftly v1.0.0 ===
+2025-09-04 16:11:37.038 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Inicializando sistema de banco de dados...
+2025-09-04 16:11:37.040 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - Configurações carregadas com sucesso
+2025-09-04 16:11:37.040 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - === CONFIGURAÇÕES CARREGADAS ===
+2025-09-04 16:11:37.041 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.password = [HIDDEN]
+2025-09-04 16:11:37.041 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.path = logs/
+2025-09-04 16:11:37.041 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.theme = default
+2025-09-04 16:11:37.041 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.window.min.height = 800
+2025-09-04 16:11:37.041 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - resources.comprovantes.max.size = 10485760
+2025-09-04 16:11:37.041 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - sync.interval.seconds = 30
+2025-09-04 16:11:37.042 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - security.lockout.duration.minutes = 15
+2025-09-04 16:11:37.042 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.url = jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+2025-09-04 16:11:37.042 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.max.size = 10MB
+2025-09-04 16:11:37.042 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.level.com.shiftly = INFO
+2025-09-04 16:11:37.042 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - sync.auto.enabled = true
+2025-09-04 16:11:37.042 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.host = localhost
+2025-09-04 16:11:37.042 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - dev.show.sql = false
+2025-09-04 16:11:37.042 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.max.dia = 4.0
+2025-09-04 16:11:37.042 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ferias.dias.ano = 30
+2025-09-04 16:11:37.042 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.password = [HIDDEN]
+2025-09-04 16:11:37.042 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.database = ShiftlyDB
+2025-09-04 16:11:37.042 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.max.history = 30
+2025-09-04 16:11:37.042 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.name = Shiftly
+2025-09-04 16:11:37.042 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.level.root = WARN
+2025-09-04 16:11:37.042 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.port = 1433
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.expiration.refresh = 604800000
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - security.max.login.attempts = 5
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.username = sa
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.adicional.percentual = 0.5
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.secret = ShiftlySecretKeyForJWT2024!ComplexAndSecureKey123456789
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.expiration.access = 28800000
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.version = 1.0.0
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.description = Sistema de Controle de Ponto EletrÃ´nico
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ferias.antecedencia.minima.dias = 30
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.window.min.width = 1200
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.username = sa
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - resources.comprovantes.directory = comprovantes
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - dev.mode = false
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.max.mes = 60.0
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - === FIM DAS CONFIGURAÇÕES ===
+2025-09-04 16:11:37.043 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.url = jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE (padrão: jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE)
+2025-09-04 16:11:37.044 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.username = sa (padrão: sa)
+2025-09-04 16:11:37.044 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.password =  (padrão: )
+2025-09-04 16:11:37.044 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - === Testando conectividade dos bancos ===
+2025-09-04 16:11:37.453 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - ✓ SQL Server: Conectado com sucesso
+2025-09-04 16:11:37.639 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - ✓ H2: Conectado com sucesso
+2025-09-04 16:11:37.639 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - === Fim do teste de conectividade ===
+2025-09-04 16:11:37.650 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - === INICIALIZAÇÃO DO BANCO DE DADOS ===
+2025-09-04 16:11:37.650 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Iniciando criação das estruturas do banco de dados...
+2025-09-04 16:11:37.677 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:11:37.677 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - SQL Server disponível - inicializando...
+2025-09-04 16:11:37.677 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Inicializando SQL Server...
+2025-09-04 16:11:37.709 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Banco ShiftlyDB criado/verificado com sucesso
+2025-09-04 16:11:37.709 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Executando script completo do SQL Server...
+2025-09-04 16:11:37.733 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Tentando carregar script: /database/create-database-simple.sql
+2025-09-04 16:11:37.740 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script carregado com sucesso: /database/create-database-simple.sql (19278 caracteres)
+2025-09-04 16:11:37.740 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Iniciando execução do script SQL...
+2025-09-04 16:11:37.744 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script dividido em 1 comandos
+2025-09-04 16:11:37.752 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script executado: 1 comandos processados, 0 falharam
+2025-09-04 16:11:37.752 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script simplificado do SQL Server executado com sucesso
+2025-09-04 16:11:37.752 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - SQL Server inicializado com sucesso
+2025-09-04 16:11:37.752 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - === BANCO DE DADOS INICIALIZADO COM SUCESSO ===
+2025-09-04 16:11:37.753 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Sistema de banco de dados inicializado com sucesso
+2025-09-04 16:11:37.753 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Iniciando sincronização automática...
+2025-09-04 16:11:37.755 [JavaFX-Launcher] INFO  c.s.repository.DatabaseSynchronizer - Sincronização automática iniciada (verificação a cada 30 segundos)
+2025-09-04 16:11:37.759 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Sincronização automática iniciada
+2025-09-04 16:11:37.759 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Aplicação inicializada com sucesso
+2025-09-04 16:11:37.778 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Iniciando interface gráfica...
+2025-09-04 16:11:38.007 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Tela de login inicializada
+2025-09-04 16:11:38.055 [JavaFX Application Thread] WARN  com.shiftly.app.ShiftlyApplication - Não foi possível carregar ícone da aplicação: Input stream must not be null
+2025-09-04 16:11:38.503 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Interface gráfica iniciada com sucesso
+2025-09-04 16:11:39.695 [JavaFX Application Thread] INFO  c.s.controller.CadastroController - Tela de cadastro inicializada
+2025-09-04 16:12:04.964 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Finalizando aplicação...
+2025-09-04 16:12:04.965 [JavaFX Application Thread] INFO  c.s.repository.DatabaseSynchronizer - Sincronização automática interrompida
+2025-09-04 16:12:04.965 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Aplicação finalizada
+2025-09-04 16:12:53.962 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - SQL Server online, iniciando sincronização automática...
+2025-09-04 16:12:53.962 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Iniciando sincronização de todos os dados pendentes...
+2025-09-04 16:12:53.962 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronizando 4 usuários pendentes...
+2025-09-04 16:12:53.963 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:12:53.978 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:12:54.011 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:12:54.028 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:12:54.028 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:12:54.105 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:12:54.105 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:12:54.121 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:12:54.153 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:12:54.170 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:12:54.170 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:12:54.246 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:12:54.246 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:12:54.263 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:12:54.296 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:12:54.312 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:12:54.312 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:12:54.389 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:12:54.389 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:12:54.405 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:12:54.438 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:12:54.454 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:12:54.454 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:12:54.530 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:12:54.531 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronização concluída com sucesso
+2025-09-04 16:13:23.510 [main] INFO  com.shiftly.app.ShiftlyApplication - Iniciando Shiftly...
+2025-09-04 16:13:23.515 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - === Inicializando Shiftly v1.0.0 ===
+2025-09-04 16:13:23.516 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Inicializando sistema de banco de dados...
+2025-09-04 16:13:23.518 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - Configurações carregadas com sucesso
+2025-09-04 16:13:23.519 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - === CONFIGURAÇÕES CARREGADAS ===
+2025-09-04 16:13:23.520 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.password = [HIDDEN]
+2025-09-04 16:13:23.520 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.path = logs/
+2025-09-04 16:13:23.520 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.theme = default
+2025-09-04 16:13:23.520 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.window.min.height = 800
+2025-09-04 16:13:23.520 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - resources.comprovantes.max.size = 10485760
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - sync.interval.seconds = 30
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - security.lockout.duration.minutes = 15
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.url = jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.max.size = 10MB
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.level.com.shiftly = INFO
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - sync.auto.enabled = true
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.host = localhost
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - dev.show.sql = false
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.max.dia = 4.0
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ferias.dias.ano = 30
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.password = [HIDDEN]
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.database = ShiftlyDB
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.max.history = 30
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.name = Shiftly
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.level.root = WARN
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.port = 1433
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.expiration.refresh = 604800000
+2025-09-04 16:13:23.521 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - security.max.login.attempts = 5
+2025-09-04 16:13:23.522 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.username = sa
+2025-09-04 16:13:23.522 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.adicional.percentual = 0.5
+2025-09-04 16:13:23.522 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.secret = ShiftlySecretKeyForJWT2024!ComplexAndSecureKey123456789
+2025-09-04 16:13:23.522 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.expiration.access = 28800000
+2025-09-04 16:13:23.522 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.version = 1.0.0
+2025-09-04 16:13:23.522 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.description = Sistema de Controle de Ponto EletrÃ´nico
+2025-09-04 16:13:23.522 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ferias.antecedencia.minima.dias = 30
+2025-09-04 16:13:23.522 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.window.min.width = 1200
+2025-09-04 16:13:23.522 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.username = sa
+2025-09-04 16:13:23.522 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - resources.comprovantes.directory = comprovantes
+2025-09-04 16:13:23.522 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - dev.mode = false
+2025-09-04 16:13:23.522 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.max.mes = 60.0
+2025-09-04 16:13:23.522 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - === FIM DAS CONFIGURAÇÕES ===
+2025-09-04 16:13:23.522 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.url = jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE (padrão: jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE)
+2025-09-04 16:13:23.522 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.username = sa (padrão: sa)
+2025-09-04 16:13:23.523 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.password =  (padrão: )
+2025-09-04 16:13:23.523 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - === Testando conectividade dos bancos ===
+2025-09-04 16:13:23.929 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - ✓ SQL Server: Conectado com sucesso
+2025-09-04 16:13:24.118 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - ✓ H2: Conectado com sucesso
+2025-09-04 16:13:24.118 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - === Fim do teste de conectividade ===
+2025-09-04 16:13:24.129 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - === INICIALIZAÇÃO DO BANCO DE DADOS ===
+2025-09-04 16:13:24.129 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Iniciando criação das estruturas do banco de dados...
+2025-09-04 16:13:24.156 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:13:24.156 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - SQL Server disponível - inicializando...
+2025-09-04 16:13:24.156 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Inicializando SQL Server...
+2025-09-04 16:13:24.188 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Banco ShiftlyDB criado/verificado com sucesso
+2025-09-04 16:13:24.189 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Executando script completo do SQL Server...
+2025-09-04 16:13:24.222 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Tentando carregar script: /database/create-database-simple.sql
+2025-09-04 16:13:24.233 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script carregado com sucesso: /database/create-database-simple.sql (19278 caracteres)
+2025-09-04 16:13:24.233 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Iniciando execução do script SQL...
+2025-09-04 16:13:24.238 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script dividido em 1 comandos
+2025-09-04 16:13:24.252 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script executado: 1 comandos processados, 0 falharam
+2025-09-04 16:13:24.252 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script simplificado do SQL Server executado com sucesso
+2025-09-04 16:13:24.252 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - SQL Server inicializado com sucesso
+2025-09-04 16:13:24.252 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - === BANCO DE DADOS INICIALIZADO COM SUCESSO ===
+2025-09-04 16:13:24.252 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Sistema de banco de dados inicializado com sucesso
+2025-09-04 16:13:24.253 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Iniciando sincronização automática...
+2025-09-04 16:13:24.256 [JavaFX-Launcher] INFO  c.s.repository.DatabaseSynchronizer - Sincronização automática iniciada (verificação a cada 30 segundos)
+2025-09-04 16:13:24.261 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Sincronização automática iniciada
+2025-09-04 16:13:24.261 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Aplicação inicializada com sucesso
+2025-09-04 16:13:24.286 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Iniciando interface gráfica...
+2025-09-04 16:13:24.520 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Tela de login inicializada
+2025-09-04 16:13:24.566 [JavaFX Application Thread] WARN  com.shiftly.app.ShiftlyApplication - Não foi possível carregar ícone da aplicação: Input stream must not be null
+2025-09-04 16:13:24.995 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Interface gráfica iniciada com sucesso
+2025-09-04 16:13:26.070 [JavaFX Application Thread] INFO  c.s.controller.CadastroController - Tela de cadastro inicializada
+2025-09-04 16:13:31.377 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Solicitação de fechamento da aplicação
+2025-09-04 16:13:31.386 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Finalizando aplicação...
+2025-09-04 16:13:31.387 [JavaFX Application Thread] INFO  c.s.repository.DatabaseSynchronizer - Sincronização automática interrompida
+2025-09-04 16:13:31.387 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Aplicação finalizada
+2025-09-04 16:14:32.686 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - SQL Server online, iniciando sincronização automática...
+2025-09-04 16:14:32.687 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Iniciando sincronização de todos os dados pendentes...
+2025-09-04 16:14:32.687 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronizando 4 usuários pendentes...
+2025-09-04 16:14:32.687 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:14:32.706 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:14:32.743 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:14:32.761 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:14:32.761 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:14:32.838 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:14:32.838 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:14:32.856 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:14:32.892 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:14:32.908 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:14:32.909 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:14:32.986 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:14:32.987 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:14:33.004 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:14:33.038 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:14:33.057 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:14:33.057 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:14:33.135 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:14:33.135 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:14:33.153 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:14:33.189 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:14:33.207 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:14:33.207 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:14:33.284 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:14:33.284 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronização concluída com sucesso
+2025-09-04 16:15:35.335 [main] INFO  com.shiftly.app.ShiftlyApplication - Iniciando Shiftly...
+2025-09-04 16:15:35.340 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - === Inicializando Shiftly v1.0.0 ===
+2025-09-04 16:15:35.341 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Inicializando sistema de banco de dados...
+2025-09-04 16:15:35.344 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - Configurações carregadas com sucesso
+2025-09-04 16:15:35.344 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - === CONFIGURAÇÕES CARREGADAS ===
+2025-09-04 16:15:35.345 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.password = [HIDDEN]
+2025-09-04 16:15:35.345 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.path = logs/
+2025-09-04 16:15:35.345 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.theme = default
+2025-09-04 16:15:35.345 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.window.min.height = 800
+2025-09-04 16:15:35.345 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - resources.comprovantes.max.size = 10485760
+2025-09-04 16:15:35.345 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - sync.interval.seconds = 30
+2025-09-04 16:15:35.345 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - security.lockout.duration.minutes = 15
+2025-09-04 16:15:35.345 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.url = jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+2025-09-04 16:15:35.345 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.max.size = 10MB
+2025-09-04 16:15:35.345 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.level.com.shiftly = INFO
+2025-09-04 16:15:35.346 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - sync.auto.enabled = true
+2025-09-04 16:15:35.346 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.host = localhost
+2025-09-04 16:15:35.346 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - dev.show.sql = false
+2025-09-04 16:15:35.346 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.max.dia = 4.0
+2025-09-04 16:15:35.346 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ferias.dias.ano = 30
+2025-09-04 16:15:35.346 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.password = [HIDDEN]
+2025-09-04 16:15:35.346 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.database = ShiftlyDB
+2025-09-04 16:15:35.346 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.file.max.history = 30
+2025-09-04 16:15:35.346 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.name = Shiftly
+2025-09-04 16:15:35.346 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - logging.level.root = WARN
+2025-09-04 16:15:35.346 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.port = 1433
+2025-09-04 16:15:35.347 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.expiration.refresh = 604800000
+2025-09-04 16:15:35.347 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - security.max.login.attempts = 5
+2025-09-04 16:15:35.347 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.h2.username = sa
+2025-09-04 16:15:35.347 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.adicional.percentual = 0.5
+2025-09-04 16:15:35.347 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.secret = ShiftlySecretKeyForJWT2024!ComplexAndSecureKey123456789
+2025-09-04 16:15:35.347 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - jwt.expiration.access = 28800000
+2025-09-04 16:15:35.347 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.version = 1.0.0
+2025-09-04 16:15:35.347 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - app.description = Sistema de Controle de Ponto EletrÃ´nico
+2025-09-04 16:15:35.347 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ferias.antecedencia.minima.dias = 30
+2025-09-04 16:15:35.347 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - ui.window.min.width = 1200
+2025-09-04 16:15:35.347 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - database.sqlserver.username = sa
+2025-09-04 16:15:35.347 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - resources.comprovantes.directory = comprovantes
+2025-09-04 16:15:35.347 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - dev.mode = false
+2025-09-04 16:15:35.348 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - horasextras.max.mes = 60.0
+2025-09-04 16:15:35.348 [JavaFX-Launcher] INFO  com.shiftly.util.ConfigUtil - === FIM DAS CONFIGURAÇÕES ===
+2025-09-04 16:15:35.348 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.url = jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE (padrão: jdbc:h2:mem:shiftly;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE)
+2025-09-04 16:15:35.348 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.username = sa (padrão: sa)
+2025-09-04 16:15:35.348 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - Configuração database.h2.password =  (padrão: )
+2025-09-04 16:15:35.349 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - === Testando conectividade dos bancos ===
+2025-09-04 16:15:35.747 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - ✓ SQL Server: Conectado com sucesso
+2025-09-04 16:15:35.968 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - ✓ H2: Conectado com sucesso
+2025-09-04 16:15:35.969 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - === Fim do teste de conectividade ===
+2025-09-04 16:15:35.981 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - === INICIALIZAÇÃO DO BANCO DE DADOS ===
+2025-09-04 16:15:35.982 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Iniciando criação das estruturas do banco de dados...
+2025-09-04 16:15:36.011 [JavaFX-Launcher] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:15:36.011 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - SQL Server disponível - inicializando...
+2025-09-04 16:15:36.011 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Inicializando SQL Server...
+2025-09-04 16:15:36.043 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Banco ShiftlyDB criado/verificado com sucesso
+2025-09-04 16:15:36.043 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Executando script completo do SQL Server...
+2025-09-04 16:15:36.067 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Tentando carregar script: /database/create-database-simple.sql
+2025-09-04 16:15:36.074 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script carregado com sucesso: /database/create-database-simple.sql (19278 caracteres)
+2025-09-04 16:15:36.074 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Iniciando execução do script SQL...
+2025-09-04 16:15:36.078 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script dividido em 1 comandos
+2025-09-04 16:15:36.088 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script executado: 1 comandos processados, 0 falharam
+2025-09-04 16:15:36.088 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - Script simplificado do SQL Server executado com sucesso
+2025-09-04 16:15:36.088 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - SQL Server inicializado com sucesso
+2025-09-04 16:15:36.088 [JavaFX-Launcher] INFO  c.s.repository.DatabaseInitializer - === BANCO DE DADOS INICIALIZADO COM SUCESSO ===
+2025-09-04 16:15:36.088 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Sistema de banco de dados inicializado com sucesso
+2025-09-04 16:15:36.088 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Iniciando sincronização automática...
+2025-09-04 16:15:36.092 [JavaFX-Launcher] INFO  c.s.repository.DatabaseSynchronizer - Sincronização automática iniciada (verificação a cada 30 segundos)
+2025-09-04 16:15:36.095 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Sincronização automática iniciada
+2025-09-04 16:15:36.095 [JavaFX-Launcher] INFO  com.shiftly.app.ShiftlyApplication - Aplicação inicializada com sucesso
+2025-09-04 16:15:36.115 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Iniciando interface gráfica...
+2025-09-04 16:15:36.354 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Tela de login inicializada
+2025-09-04 16:15:36.403 [JavaFX Application Thread] WARN  com.shiftly.app.ShiftlyApplication - Não foi possível carregar ícone da aplicação: Input stream must not be null
+2025-09-04 16:15:36.905 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Interface gráfica iniciada com sucesso
+2025-09-04 16:15:37.742 [JavaFX Application Thread] INFO  c.s.controller.CadastroController - Tela de cadastro inicializada
+2025-09-04 16:16:15.697 [JavaFX Application Thread] INFO  c.s.controller.CadastroController - Iniciando cadastro de usuário...
+2025-09-04 16:16:15.707 [Thread-3] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1111@teste.com
+2025-09-04 16:16:15.730 [Thread-3] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:16:15.823 [Thread-3] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:16:15.966 [Thread-3] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:16:16.008 [Thread-3] INFO  com.shiftly.service.UsuarioService - Usuário criado com sucesso no banco: ID 9
+2025-09-04 16:16:18.023 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Tela de login inicializada
+2025-09-04 16:16:20.289 [Thread-5] INFO  com.shiftly.service.AuthService - Tentativa de login para: guilherme1111@teste.com
+2025-09-04 16:16:20.289 [Thread-5] INFO  com.shiftly.service.UsuarioService - Tentativa de autenticação para email: guilherme1111@teste.com
+2025-09-04 16:16:20.308 [Thread-5] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:16:20.405 [Thread-5] INFO  com.shiftly.service.UsuarioService - Autenticação bem-sucedida para: guilherme1111@teste.com
+2025-09-04 16:16:20.409 [Thread-5] INFO  com.shiftly.util.JwtUtil - Gerando token JWT para usuário: guilherme1111@teste.com
+2025-09-04 16:16:20.605 [Thread-5] INFO  com.shiftly.util.JwtUtil - Gerando refresh token para usuário: guilherme1111@teste.com
+2025-09-04 16:16:20.606 [Thread-5] INFO  com.shiftly.service.AuthService - Login bem-sucedido para: guilherme1111@teste.com
+2025-09-04 16:16:20.607 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Login realizado com sucesso para: guilherme1111@teste.com
+2025-09-04 16:16:20.661 [JavaFX Application Thread] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:16:20.759 [JavaFX Application Thread] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:16:20.778 [JavaFX Application Thread] INFO  c.s.controller.RhDashboardController - Dashboard do RH inicializado
+2025-09-04 16:16:20.877 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Navegou para: Shiftly - Painel RH - /fxml/rh-dashboard.fxml
+2025-09-04 16:16:20.878 [JavaFX Application Thread] INFO  c.s.controller.RhDashboardController - Dados do dashboard RH carregados
+2025-09-04 16:16:34.146 [JavaFX Application Thread] INFO  com.shiftly.service.AuthService - Realizando logout
+2025-09-04 16:16:34.147 [JavaFX Application Thread] INFO  com.shiftly.service.AuthService - Logout realizado para usuário ID: 9
+2025-09-04 16:16:34.153 [JavaFX Application Thread] INFO  c.shiftly.controller.LoginController - Tela de login inicializada
+2025-09-04 16:16:34.182 [JavaFX Application Thread] INFO  c.s.controller.RhDashboardController - Navegou para: Shiftly - Login - /fxml/login.fxml
+2025-09-04 16:16:34.182 [JavaFX Application Thread] INFO  c.s.controller.RhDashboardController - Logout realizado
+2025-09-04 16:16:36.258 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Solicitação de fechamento da aplicação
+2025-09-04 16:16:36.268 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Finalizando aplicação...
+2025-09-04 16:16:36.268 [JavaFX Application Thread] INFO  c.s.repository.DatabaseSynchronizer - Sincronização automática interrompida
+2025-09-04 16:16:36.268 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Aplicação finalizada
+2025-09-04 16:17:53.963 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - SQL Server online, iniciando sincronização automática...
+2025-09-04 16:17:53.964 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Iniciando sincronização de todos os dados pendentes...
+2025-09-04 16:17:53.964 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronizando 8 usuários pendentes...
+2025-09-04 16:17:53.964 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:17:53.980 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:54.016 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:54.033 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:17:54.033 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:54.110 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:54.110 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:17:54.127 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:54.163 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:54.180 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:17:54.180 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:54.256 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:54.257 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:17:54.273 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:54.305 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:54.321 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:17:54.321 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:54.398 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:54.398 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:17:54.414 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:54.449 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:54.466 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:17:54.467 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:54.544 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:54.544 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:17:54.560 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:54.593 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:54.610 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:17:54.610 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:54.687 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:54.687 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:17:54.704 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:54.737 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:54.753 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:17:54.754 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:54.831 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:54.832 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:17:54.848 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:54.882 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:54.899 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:17:54.899 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:54.976 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:54.976 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:17:54.993 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:55.026 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:17:55.043 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:17:55.043 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:55.120 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:17:55.120 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronização concluída com sucesso
+2025-09-04 16:19:32.685 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - SQL Server online, iniciando sincronização automática...
+2025-09-04 16:19:32.686 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Iniciando sincronização de todos os dados pendentes...
+2025-09-04 16:19:32.686 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronizando 8 usuários pendentes...
+2025-09-04 16:19:32.686 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:19:32.705 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:32.738 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:32.757 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:19:32.757 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:32.834 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:32.835 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:19:32.851 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:32.885 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:32.903 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:19:32.903 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:32.980 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:32.980 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:19:32.998 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:33.032 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:33.050 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:19:33.050 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:33.127 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:33.127 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:19:33.144 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:33.178 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:33.196 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:19:33.196 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:33.273 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:33.273 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:19:33.291 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:33.324 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:33.342 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:19:33.342 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:33.418 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:33.419 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:19:33.437 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:33.472 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:33.492 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:19:33.492 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:33.571 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:33.572 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:19:33.589 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:33.622 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:33.640 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:19:33.640 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:33.718 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:33.718 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherme1@teste.com
+2025-09-04 16:19:33.737 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:33.770 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:19:33.788 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:19:33.788 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:33.865 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherme1@teste.com
+2025-09-04 16:19:33.865 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronização concluída com sucesso
+2025-09-04 16:22:53.959 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - SQL Server online, iniciando sincronização automática...
+2025-09-04 16:22:53.959 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Iniciando sincronização de todos os dados pendentes...
+2025-09-04 16:22:53.959 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronizando 16 usuários pendentes...
+2025-09-04 16:22:53.959 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:53.975 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:54.007 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:54.024 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:54.024 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:54.100 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:54.100 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:54.116 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:54.147 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:54.163 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:54.163 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:54.240 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:54.240 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:54.256 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:54.288 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:54.306 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:54.306 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:54.389 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:54.389 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:54.407 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:54.439 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:54.454 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:54.455 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:54.534 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:54.534 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:54.550 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:54.581 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:54.597 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:54.597 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:54.674 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:54.674 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:54.690 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:54.721 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:54.736 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:54.737 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:54.813 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:54.813 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:54.829 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:54.860 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:54.877 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:54.877 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:54.953 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:54.953 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:54.969 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:55.001 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:55.019 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:55.019 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:55.096 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:55.096 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:55.112 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:55.156 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:55.176 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:55.176 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:55.253 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:55.254 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:55.269 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:55.301 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:55.317 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:55.317 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:55.394 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:55.394 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:55.409 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:55.441 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:55.456 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:55.457 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:55.534 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:55.534 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:55.551 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:55.583 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:55.599 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:55.599 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:55.676 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:55.676 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:55.692 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:55.722 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:55.738 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:55.738 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:55.814 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:55.814 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:55.830 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:55.861 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:55.876 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:55.877 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:55.953 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:55.953 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:55.969 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:55.999 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:56.015 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:56.015 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:56.092 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:56.092 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Criando novo usuário: guilherm22e@teste.com
+2025-09-04 16:22:56.108 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:56.138 [pool-4-thread-1] INFO  c.shiftly.repository.DatabaseConfig - SQL Server está disponível
+2025-09-04 16:22:56.154 [pool-4-thread-1] WARN  com.shiftly.service.UsuarioService - Erro ao criar usuário no banco, adicionando ao cache offline: CPF já está em uso: 07079424208
+2025-09-04 16:22:56.154 [pool-4-thread-1] INFO  com.shiftly.util.OfflineCache - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:56.231 [pool-4-thread-1] INFO  com.shiftly.service.UsuarioService - Usuário adicionado ao cache offline: guilherm22e@teste.com
+2025-09-04 16:22:56.231 [pool-4-thread-1] INFO  com.shiftly.service.SyncService - Sincronização concluída com sucesso
+2025-09-04 16:23:01.763 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Solicitação de fechamento da aplicação
+2025-09-04 16:23:01.770 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Finalizando aplicação...
+2025-09-04 16:23:01.771 [JavaFX Application Thread] INFO  c.s.repository.DatabaseSynchronizer - Sincronização automática interrompida
+2025-09-04 16:23:01.771 [JavaFX Application Thread] INFO  com.shiftly.app.ShiftlyApplication - Aplicação finalizada
